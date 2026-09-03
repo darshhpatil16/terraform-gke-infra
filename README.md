@@ -8,15 +8,17 @@ Infrastructure as Code (IaC) project to provision a Google Kubernetes Engine (GK
 
 ## Architecture
 
+```text
 Terraform
-   |
-   v
+   │
+   ▼
 Google Cloud Platform
-   |
-   +-- GKE Cluster
-   |
-   +-- Node Pool
-
+   │
+   ├── VPC
+   ├── Subnet
+   └── GKE Cluster
+          │
+          └── Node Pool
 ---
 
 ## Technologies
